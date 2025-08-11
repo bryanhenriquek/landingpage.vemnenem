@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './assets/logo.png'
+import mockup from './assets/mockup.png'
 
 export default function SeoCourseLanding() {
   return (
@@ -9,14 +10,14 @@ export default function SeoCourseLanding() {
     <img 
       src={Logo}
       alt="logo"
-      style={{ height: 70, cursor: 'pointer' }} 
+      style={{ height: 80, cursor: 'pointer' }} 
     />
   </div>
   <nav style={styles.nav}>
     <a href="#about" style={styles.navLink}>About</a>
     <a href="#tutors" style={styles.navLink}>Tutors</a>
     <a href="#program" style={styles.navLink}>Program</a>
-    <a href="#location" style={styles.navLink}>Location</a>
+    <a href="#location" style={styles.navLink}>Onde estamos?</a>
   </nav>
 </header>
 
@@ -24,14 +25,14 @@ export default function SeoCourseLanding() {
       {/* Hero Section */}
       <section style={styles.hero}>
         <div>
-          <p style={styles.subTitle}>Discover new data analytics tools</p>
-          <h1 style={styles.title}>Data science for SEO</h1>
+          <p style={styles.subTitle}>VEM NENÉM</p>
+          <h1 style={styles.title}>O seu app de maternidade</h1>
           <p style={styles.description}>
             Learn to gather and analyze data provided by Google Analytics, search consoles & web servers with our new data science course.
           </p>
         </div>
         <img 
-          src="https://cdn-icons-png.flaticon.com/512/747/747376.png" 
+          src={mockup} 
           alt="Rocket Icon" 
           style={styles.heroImage} 
         />
@@ -114,9 +115,9 @@ const styles = {
   container: {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     width: '100%',
-    paddingTop: 70,
-    paddingLeft: 20,
-    paddingRight: 20,
+    paddingTop: 110,
+    paddingLeft: 50,
+    paddingRight: 50,
     paddingBottom: 20,
     color: '#333',
   },
@@ -181,8 +182,9 @@ const styles = {
     maxWidth: 400,
   },
   heroImage: {
-    width: 150,
-    height: 150,
+    width: 400,
+    height: 400,
+    paddingRight: 30,
   },
   infoCards: {
     display: 'flex',
